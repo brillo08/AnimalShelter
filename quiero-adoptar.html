@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiero Adoptar - Fundación Animal Shelter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiero-adoptar.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fundación Animal Shelter</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#quienes-somos">Quienes Somos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Quiero Adoptar</h1>
+
+            <section id="perros">
+                <h2>Perros</h2>
+                <div class="filter-container">
+                    <div class="filter">
+                        <h3>Tamaño</h3>
+                        <button class="filter-btn" data-filter="pequeño">Pequeño</button>
+                        <button class="filter-btn" data-filter="mediano">Mediano</button>
+                        <button class="filter-btn" data-filter="grande">Grande</button>
+                    </div>
+                    <div class="filter">
+                        <h3>Edad</h3>
+                        <button class="filter-btn" data-filter="cachorro">Cachorro</button>
+                        <button class="filter-btn" data-filter="joven">Joven</button>
+                        <button class="filter-btn" data-filter="adulto">Adulto</button>
+                    </div>
+                </div>
+                <div class="pets-grid">
+                    <!-- Aquí irían las tarjetas de los perros -->
+                    <div class="pet-card" data-size="pequeño" data-age="cachorro">
+                        <img src="https://images.unsplash.com/photo-1593134257782-e89567b7718a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Perro pequeño">
+                        <h3>Max</h3>
+                        <p>Pequeño | Cachorro</p>
+                    </div>
+                    <div class="pet-card" data-size="mediano" data-age="joven">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Perro mediano">
+                        <h3>Luna</h3>
+                        <p>Mediano | Joven</p>
+                    </div>
+                    <div class="pet-card" data-size="grande" data-age="adulto">
+                        <img src="https://images.unsplash.com/photo-1553882809-a4f57e59501d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Perro grande">
+                        <h3>Rocky</h3>
+                        <p>Grande | Adulto</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gatos">
+                <h2>Gatos</h2>
+                <div class="filter-container">
+                    <div class="filter">
+                        <h3>Tamaño</h3>
+                        <button class="filter-btn" data-filter="pequeño">Pequeño</button>
+                        <button class="filter-btn" data-filter="mediano">Mediano</button>
+                        <button class="filter-btn" data-filter="grande">Grande</button>
+                    </div>
+                    <div class="filter">
+                        <h3>Edad</h3>
+                        <button class="filter-btn" data-filter="cachorro">Cachorro</button>
+                        <button class="filter-btn" data-filter="joven">Joven</button>
+                        <button class="filter-btn" data-filter="adulto">Adulto</button>
+                    </div>
+                </div>
+                <div class="pets-grid">
+                    <!-- Aquí irían las tarjetas de los gatos -->
+                    <div class="pet-card" data-size="pequeño" data-age="cachorro">
+                        <img src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Gato pequeño">
+                        <h3>Mimi</h3>
+                        <p>Pequeño | Cachorro</p>
+                    </div>
+                    <div class="pet-card" data-size="mediano" data-age="joven">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Gato mediano">
+                        <h3>Simba</h3>
+                        <p>Mediano | Joven</p>
+                    </div>
+                    <div class="pet-card" data-size="grande" data-age="adulto">
+                        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Gato grande">
+                        <h3>Nala</h3>
+                        <p>Grande | Adulto</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fundación Animal Shelter. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="quiero-adoptar.js"></script>
+</body>
+</html>
