@@ -1,0 +1,432 @@
+/* Estilos generales */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #50C878;
+    --accent-color: #FFD700;
+    --text-color: #787272;
+    --bg-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-img {
+    border-radius: 8px;
+}
+
+/* Header y navegación */
+header {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo-img {
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: none;
+    list-style: none;
+}
+
+.nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+}
+
+.btn-login {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #3A80D2;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero section y carrusel */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-adopt { background-color: var(--primary-color); }
+.btn-sponsor { background-color: var(--secondary-color); }
+.btn-donate { background-color: var(--accent-color); }
+
+/* About section */
+.about {
+    background-color: #f4f4f4;
+    padding: 70px;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.about ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+}
+
+/* Shelter info section */
+.shelter-info {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    padding: 70px;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.shelter-info .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center; /* Centra los elementos dentro del contenedor */
+}
+
+.shelter-text h3, .shelter-text p {
+    text-align: center; /* Asegura que el título y el párrafo estén centrados */
+    max-width: 700px; /* Ancho máximo opcional para facilitar la lectura */
+}
+
+/* Adoption center section */
+.adoption-center {
+    padding: 3rem 0;
+}
+
+.adoption-center .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Visit us section */
+.visit-us {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Footer y formulario de contacto */
+footer {
+    background-color: #ffffff;
+    color: #787272;;
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #787272;;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #555050;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Media queries para responsividad */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .carousel {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    :root {
+        --primary-color: #4A90E2;
+        --secondary-color: #50C878;
+        --accent-color: #FFD700;
+        --text-color: #787272;
+        --bg-color: #fff;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: column; /* Alineación vertical */
+        align-items: center;
+        gap: 2rem; /* Espacio entre botones */
+        margin-bottom: 3rem;
+        color: white;
+    }
+    
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+    
+    .button:hover {
+        transform: scale(1.05);
+    }
+    
+    .adoptar {
+        background-color: #4CAF50;
+    }
+    
+    .donar {
+        background-color: #2196F3;
+    }
+    .apadrinar {
+        background-color: #FFD700; 
+    } 
+    .paw-print {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .fas fa-paw paw-print{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    }
+    
+
+    .shelter-info .container,
+    .adoption-center .container {
+        flex-direction: row;
+    }
+
+    .shelter-text,
+    .shelter-image,
+    .adoption-image,
+    .adoption-text {
+        width: 48%;
+    }
+
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .contact-form,
+    .social-links {
+        width: 30%;
+    }
+}
+
+/* Color normal del enlace */
+a {
+    color: var(--secondary-color); /* Color de enlace normal */
+    text-decoration: none; /* Quita el subrayado si lo deseas */
+}
+
+/* Color del enlace cuando el usuario pasa el cursor sobre él */
+a:hover {
+    color: var(--secondary-color); /* Color al pasar el cursor */
+}
+
+/* Color del enlace cuando se hace clic */
+a:active {
+    color: var(--secondary-color);
+}
+
+/* Color del enlace ya visitado */
+a:visited {
+    color: var(--secondary-color);
+}
